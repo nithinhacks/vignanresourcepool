@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+body {
+  background-color: #16292c;
+  background-image: url('http://cpallen.com/wp-content/uploads/2014/12/snow1.png'), 
+                    url('http://cpallen.com/wp-content/uploads/2014/12/snow2.png');
+  animation: snow 20s linear infinite;
+  -moz-animation: snow 20s linear infinite;
+  -webkit-animation: snow 20s linear infinite;
+  -ms-animation: snow 20s linear infinite;
+}
+.header { 
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size:48px;
+  text-align: center;
+  text-shadow: 1px 3px 1px #346066;
+}
+@keyframes snow, {
+  0% {background-position: 0px 0px, 0px 0px;}
+  100% { background-position: 500px 1000px, 400px 400px; }
+}
+@-moz-keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px;}
+ 100% { background-position: 500px 1000px, 400px 400px; }
+}
+@-webkit-keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px;}
+ 100% { background-position: 500px 1000px, 400px 400px; }
+}
+@-ms-keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px;}
+ 100% { background-position: 500px 1000px, 400px 400px; }
+}
+
+
+.navbar img{
+  padding-left: 100px;
+  height: 130px;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10;
+}
+
+p{
+  font-family: 'Staatliches', cursive;
+}
+
+.navbar .logo{
+    width: 120px;
+    margin: 10px 0;
+    cursor: pointer;
+    margin-right: auto;
+}
+a {
+    position: relative;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 2px solid white;
+    margin: 15px;
+  }
+
+
+  
+  a span {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial;
+    /* border: 2px solid white; */
+    letter-spacing: 5px;
+    z-index: 1;
+  }
+  
+  a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    background: #3358ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+  }
+  
+  a .liquid::after,
+  a .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+  }
+  
+  a .liquid::before {
+    
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+  }
+  
+  a .liquid::after {
+    
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+  }
+  
+  a:hover .liquid{
+    top: -120px;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+
+
+  .svg svg{
+    padding-left: 100px;
+    width: 900px;
+    /* background-color: #3358ff; */
+    padding-top: 10px;
+  }
+  
+.svg{
+    width: 100%;
+    height: 70vh;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-left: auto;
+    margin-top: 50px;
+}
+#sky{
+    animation: changecolor 5s infinite alternate;
+}
+@keyframes changecolor{
+    10%{
+        transform: rotate(1.5deg);
+    }
+ 
+   70%{
+        transform: rotate(-1.5deg);
+    }
+}
+
+#window{
+  /* background-color: yellow; */
+  animation: something 2s infinite ease-in alternate;
+}
+@keyframes something{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-15px);
+  }
+}
+.container{
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 95%;
+  flex-wrap: wrap;
+  padding: 0 0;
+  transform: translateY(-100%);
+}
+
+.container .card{
+  position: fixed;
+  min-width: 500px;
+  height: 440px;
+  background-color: #e0fbfc;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .05),inset -5px -5px 5px rgba(255, 255, 255, .5),5px 5px 5px rgba(0, 0, 0, .05),-5px -5px 5px rgba(255, 255, 255, .5);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.container .card .box{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container .card:hover .box{
+  transform: translateY(-50px);
+  background: linear-gradient(45deg,#b95cef,#4f29cd);
+}
+
+.container .card .box .content{
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content p{
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+}
+h1{
+  color: #6b705c;
+}
+.container .card .box .content h2{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.6em;
+}
+
+.container .card:hover .box .content h1{
+  color: #fff;
+}
+
+.container .card:hover .box .content p{
+  color: #fff;
+}

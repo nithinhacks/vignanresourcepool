@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #231942;
+}
+.row1{
+    margin-left: 100px;
+    display: flex;
+    margin-top: 100px;
+}
+.row2{
+    display: flex;
+    margin-top: 100px;
+}
+.row3{
+    margin-top: 40px;
+    margin-left: 320px;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+a{
+    margin-left: 120px;
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 10px;
+}
+.square1{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    display:flex;
+    margin-right: 70px;
+}
+.square1 span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+.square1:hover span:nth-child(1){
+    border: none;
+    /* background: rgba(0, 0, #4BDED0, 0); */
+    background-color: #4BDED0;
+}
+.square1 span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+.square1:hover span:nth-child(2){
+    border: none;
+    /* background: rgba(0, 0, 255, 0.8); */
+    background-color: #4BDED0;
+}
+.square1 span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+.square1:hover span:nth-child(3){
+    border: none;
+    /* background: rgba(0, 0, 255, 0.8); */
+    background-color: #4BDED0;
+}
+.square2{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    display:flex;
+}
+.square2 span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+.square2:hover span:nth-child(1){
+    border: none;
+    /* background: rgba(0, 0, 255, 0.8); */
+    background-color: #4BDED0;
+}
+.square2 span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+.square2:hover span:nth-child(2){
+    border: none;
+    /* background: rgba(0, 0, 255, 0.8); */
+    background-color: #4BDED0;
+}
+.square2 span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+.square2:hover span:nth-child(3){
+    border: none;
+    /* background: rgba(0, 0, 255, 0.8); */
+    background-color: #4BDED0;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.content{
+    position: relative;
+    padding: 130px 60px;
+    color: #fff;
+    z-index: 1000;
+}
+
+/* unit 2 */
+
+.square{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display:flex;
+    margin-right: 100px;
+}
+.square span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+.square:hover span:nth-child(1){
+    border: none;
+    background: rgba(0, 0, 255, 0.8);
+}
+.square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+.square:hover span:nth-child(2){
+    border: none;
+    background: rgba(0, 0, 255, 0.8);
+}
+.square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+.square:hover span:nth-child(3){
+    border: none;
+    background: rgba(0, 0, 255, 0.8);
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.content{
+    position: relative;
+    padding: 130px 60px;
+    color: #fff;
+    z-index: 1000;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+#scrollPath{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255,255,0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    animation: animate3 5s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(10px);
+}
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(30px);
+}

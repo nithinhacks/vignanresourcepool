@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel = "stylesheet" href = "style.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="c_prog_1.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <title>Document</title>
+</head>
+  
+  <body>
+    <div class="container">
+     <div class="heading">
+       <h3>C PROGRAMMING </h3>
+       <img src = "c_prog.png" alt = "img">
+       </div>
+    <div class = "Collapse">
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h1>Variables and Keywords in C</h1></a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>
+              A variable in simple terms is a storage place which has some memory allocated to it. Basically, a variable used to store some form of data. Different types of variables require different amounts of memory, and have some specific set of operations which can be applied on them.
+            </p>
+            <p>
+              <strong>Declaration</strong><br>type variable_name = value;
+            </p>
+            <p>
+              <strong>some examples are</strong><br>extern int d = 3, f = 5;    // declaration of d and f. <br>
+              int d = 3, f = 5;           // definition and initializing d and f. <br>
+              byte z = 22;                // definition and initializes z. <br>
+              char x = 'x';               // the variable x has the value 'x'.<br>
+            </p>
+            <p>
+              <strong>Faculty material</strong><br>
+              <a href="https://docs.google.com/document/d/1S2vh7WVLxoVhBVAEyFDYXdwX3aaG7WW0Z9lSW1Nvu6Q/edit?usp=drivesdk">C programming</a><br>
+              <strong>read more</strong><br>
+              <a href="https://www.geeksforgeeks.org/variables-and-keywords-in-c/" target="_blank">Geeks for geeks</a><br>     
+            <a href="https://www.tutorialspoint.com/cprogramming/c_variables.htm#:~:text=Variable%20Declaration%20in%20C&text=You%20will%20use%20the%20keyword,or%20a%20block%20of%20code." target="_blanck">TUtorial points</a>
+            <p>Sharing is always welcome</p>
+            <div class="container">
+              <div class="row">
+                  <div class="col-xs-8 col-xs-offset-2 well">
+                  <form action="uploads.php" method="post" enctype="multipart/form-data">
+                      <legend>Select File to Upload:</legend>
+                      <div class="form-group">
+                          <input type="file" name="file1" />
+                      </div>
+                      <div class="form-group">
+                          <input type="submit" name="submit" value="Uploads" class="btn btn-info"/>
+                      </div>
+                      <?php if(isset($_GET['st'])) { ?>
+                          <div class="alert alert-danger text-center">
+                          <?php if ($_GET['st'] == 'success') {
+                                  echo "File Uploaded Successfully!";
+                              }
+                              else
+                              {
+                                  echo 'Invalid File Extension!';
+                              } ?>
+                          </div>
+                      <?php } ?>
+                  </form>
+                  </div>
+              </div>
+              
+              <div class="row">
+                  <div class="col-xs-8 col-xs-offset-2">
+                      <table class="table table-striped table-hover">
+                          <thead>
+                              <tr>
+                                  <th>#</th>
+                                  <th>File Name</th>
+                                  <th>View</th>
+                                  <th>Download</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                          <?php
+                          $i = 1;
+                          while($row = mysqli_fetch_array($result)) { ?>
+                          <tr>
+                    <td><?php echo $i++; ?></td>
+                              <!-- <td>{{$filename}}</td> -->
+                    
+                              <td><?php echo $row['filename']; ?></td>
+                              <td><a href="uploads/<?php echo $row['filename']; ?>" target="_blank">View</a></td>
+                              <td><a href="uploads/<?php echo $row['filename']; ?>" download>Download</td>
+                          </tr>
+                          <?php } ?>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+          
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h1>C tokens</h1></a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>
+              A token is the smallest element of a program that is meaningful to the compiler. <br><br><strong>Tokens can be classified as follows: </strong> <br>
+
+Keywords</br>
+Identifiers</br>
+Constants</br>
+Strings</br>
+Special Symbols</br>
+Operators</p>
+            <p>
+            <strong>Read more</strong><br>
+            <a href="https://www.geeksforgeeks.org/cc-tokens/?ref=lbp" target="_blank">Geeks for geeks</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h1>Scope rules in c</h1></a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>
+              Scope of an identifier is the part of the program where the identifier may directly be accessible. In C, all identifiers are lexically(or statically) scoped. C scope rules can be covered under the following two categories.
+            <br><br>
+            <strong>read more</strong><br>
+            <a href="https://www.geeksforgeeks.org/scope-rules-in-c/?ref=lbp">Geeks for geeks</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><h1>more info</h1></a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>
+              more info coming soon :)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+  </div>  
+  </div>
+  <div class="back">
+    <a href="c_prog.html">Back</a>
+  </div>
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

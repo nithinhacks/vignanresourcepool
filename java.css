@@ -1,0 +1,94 @@
+*{
+  font-family:font-family: 'Anton', sans-serif; ;
+}
+
+h1{
+  font-family: 'Anton', sans-serif;
+  font-size : 80px;
+
+}
+.heading h1{
+  font-size: 70px;
+  margin-left: 280px;
+  font-family: 'Anton', sans-serif;
+
+}
+.panel.panel-default>.panel-heading{
+  background-color: #6C63FF;
+  border-radius: 15px;
+}
+p{
+font-family: 'Anton', sans-serif;
+font-size : 20px;
+}
+
+.panel-heading h1:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.panel-body h2{
+  font-weight: bold;
+  font-size: 25px;
+  font-family:'Anton', sans-serif ;
+}
+
+.heading img{
+height: 60%;
+width: 80%;
+margin-left: 70px;
+}
+.p{
+  font-size: 40%;
+}
+
+.abc{
+  border: 3px solid #303030;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+}
+.h5{
+  text-align: left;
+}
+.voting{
+  position: relative;
+  border: 3px solid #303030;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+input{
+  width: 50px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 30px;
+  margin: 0 10px;
+  pointer-events: none;
+}
+button{
+  color: blue;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+button:active{
+  color: #004eff;
+  transform: scale(1.4);
+}
+
+a{
+  font-style: 'Anton', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.hi{
+  width: 100%;
+}

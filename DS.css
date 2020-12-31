@@ -1,0 +1,21 @@
+h1{
+  font-family: 'Anton', sans-serif;
+  font-size : 80px;
+
+}
+.heading h1{
+  font-size: 70px;
+  margin-left: 350px;
+  font-family: 'Anton', sans-serif;
+
+}
+
+.panel.panel-default>.panel-heading{
+  background-color: #6C63FF;
+  border-radius: 15px;
+
+}
+p{
+font-family: 'Anton', sans-serif;
+font-size : 20px;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "stylesheet" href = "java.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+  <body>
+    <div class="container">
+     <div class="heading">
+       <h1> JAVA PROGRAMMING </h1>
+
+       <img src = "java.png" alt = "img">
+       </div>
+    <div class = "Collapse">
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><p>History of Java</p></a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body"><p>Java is a programming language and a platform.
+            Java is a high level, robust, object-oriented and secure programming language.
+          </p>
+          <p>
+          Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995.
+          James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already
+          a registered company, so James Gosling and his team changed the Oak name to Java.</p>
+          <strong><h2>Faculty material</h2></strong><br>
+          <a href="https://youtu.be/te5b6p0MUrw" target="_blank"><p>Videos</p></a><br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/te5b6p0MUrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>><br>
+              <a href="https://docs.google.com/document/d/1S2vh7WVLxoVhBVAEyFDYXdwX3aaG7WW0Z9lSW1Nvu6Q/edit?usp=drivesdk">Java programming</a><br><br>
+          <p><strong>Read more</strong></p>
+          <a href = "https://www.javatpoint.com/history-of-java" target = "_blank">JavaTPoint </a>
+          <div class = "abc">
+            
+            
+        <div class = "voting"> 
+             <button id = "likebtn">
+                 <i class = "fa fa-thumbs-up"></i>
+    
+             </button><h5>Upvote </h5>
+            <input type = "number" id = "input1" value = "0" name = "">
+            
+    
+       
+        
+            <button id = "dislikebtn">
+                <i class = "fa fa-thumbs-down"></i>
+    
+            </button><h5>Downvote</h5>
+           <input type = "number" id = "input2" value = "0" name = "">
+           
+       </div>
+       
+     </div>
+     <br>
+     
+    <script type = "text/javascript">
+    let likebtn = document.querySelector('#likebtn');
+    let dislikebtn = document.querySelector('#dislikebtn');
+    let input1 = document.querySelector('#input1');
+    let input2 = document.querySelector('#input2');
+    
+    likebtn.addEventListener('click',()=>{
+    input1.value = parseInt(input1.value) + 1;
+    input1.style.color = "#12ff00";
+    })
+    
+    dislikebtn.addEventListener('click',()=>{
+    input2.value = parseInt(input2.value) + 1;
+    input2.style.color = "#ff0000";
+    })
+    
+    </script>
+    <a href = "https://www.geeksforgeeks.org/the-complete-history-of-java-programming-language/" target = "_blank">GeeksforGeeks</a>
+    <div class = "abc">
+            
+            
+      <div class = "voting"> 
+           <button id = "likebtn">
+               <i class = "fa fa-thumbs-up"></i>
+  
+           </button><h5>Upvote </h5>
+          <input type = "number" id = "input3" value = "0" name = "">
+          
+  
+     
+      
+          <button id = "dislikebtn">
+              <i class = "fa fa-thumbs-down"></i>
+  
+          </button><h5>Downvote</h5>
+         <input type = "number" id = "input4" value = "0" name = "">
+         
+     </div>
+   </div>
+   <br>
+   
+  <script type = "text/javascript">
+  let likebtn = document.querySelector('#likebtn');
+  let dislikebtn = document.querySelector('#dislikebtn');
+  let input1 = document.querySelector('#input3');
+  let input2 = document.querySelector('#input4');
+  
+  likebtn.addEventListener('click',()=>{
+  input3.value = parseInt(input3.value) + 1;
+  input3.style.color = "#12ff00";
+  })
+  
+  dislikebtn.addEventListener('click',()=>{
+  input4.value = parseInt(input4.value) + 1;
+  input4.style.color = "#ff0000";
+  })
+  
+  </script>
+
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><p>Control Statements in Java</p></a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body"><p>The Java if statement is used to test the condition. It checks boolean condition: true or false. There are various types of if statement in Java.</p>
+           <p>if statement</p>
+           <p> * if-else statement </p>
+          <p>  * if-else-if ladder </p>
+          <p>  * nested if statement </p>
+          <a href = "https://www.javatpoint.com/java-if-else" target = "_blank">Read more </a>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><p>Java OOPS Concept</p></a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body"><p>Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:</p>
+
+            <p>Object</p>
+            <p>Class</p>
+            <p>Inheritance</p>
+            <p>Polymorphism</p>
+            <p>Abstraction</p>
+            <p>Encapsulation</p>
+            <a href = "https://www.javatpoint.com/java-oops-concepts" target = "_blank">Read more </a>
+
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><p>Java arrays</p></a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body"><p>Java array is an object which contains elements of a similar data type.
+            Additionally, The elements of an array are stored in a contiguous memory location.
+            It is a data structure where we store similar elements.
+            We can store only a fixed set of elements in a Java array.</p>
+          <a href = "https://www.javatpoint.com/array-in-java" target = "_blank">Read more </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+    </body>
+    </html>

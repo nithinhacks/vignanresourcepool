@@ -1,0 +1,40 @@
+h1,p{
+    font-family: 'Staatliches', cursive;
+}
+p{
+    font-size: 20px;
+}
+h3{
+    font-family: 'Staatliches', cursive;
+    font-size: 70px;
+    text-align: center;
+}
+
+.heading h1{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.panel.panel-default{
+    background-color: #fff;
+}
+
+.panel.panel-default>.panel-heading{
+    background-color: #636DFF;
+    border-radius: 15px;
+}
+.panel-heading h1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+.back a{
+    /* height: 100px; */
+    font-size: 50px;
+    text-decoration: none;
+    margin-left: 45%;
+    color: black;
+    border: 5px solid black;
+}
